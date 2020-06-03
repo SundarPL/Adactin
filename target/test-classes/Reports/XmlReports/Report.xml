@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="36.671126">
+    <testcase classname="To validate the Adactin login Funtionality" name="To validate the Adactin login with valid credentials" time="19.198977">
+        <system-out><![CDATA[Given User has to be there in Adactin home page.............................passed
+When User has to fill username and password.................................passed
+And User Click the Login button.............................................passed
+Then User has to be there in Adactin search hotel page......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate the Adactin login Funtionality" name="To validate the Adactin search hotel page with give the mandatory info to book the hotels" time="4.376296">
+        <system-out><![CDATA[Given User has to be there in Adactin search hotel page.....................passed
+When User has to enter Loaction and hotel and Room Type and Numbers of rooms and Check in date and Check out date and Adult per room and Childern per room.passed
+And User click the search button............................................passed
+Then User is navigating to Booking confirmation page........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate the Adactin login Funtionality" name="To validate the Adactin select hotel page" time="3.238822">
+        <system-out><![CDATA[Given User has to be there in Adactin select hotel page.....................passed
+When User click the Select hotel............................................passed
+And User click the continue button..........................................passed
+Then User is navigating to Book hotel page..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate the Adactin login Funtionality" name="To validate the Adactin Book hotel page" time="3.319211">
+        <failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:31)&#13;&#10;&#9;at org.stepdefinition.Adactin_Login.user_is_navigating_to_BookingConfirm_page(Adactin_Login.java:150)&#13;&#10;&#9;at ✽.User is navigating to BookingConfirm page(file:src/test/resources/features/Adactin_Login_Page.feature:31)&#13;&#10;"><![CDATA[Given User has to be there in Adactin Book hotel page.......................passed
+When User has to enter Firstname and Lastname and Billingaddress and Credit card no and Credit card type Expirydate and CVV Number.passed
+And User click the BookNow button...........................................passed
+Then User is navigating to BookingConfirm page..............................failed
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at org.stepdefinition.Adactin_Login.user_is_navigating_to_BookingConfirm_page(Adactin_Login.java:150)
+	at ✽.User is navigating to BookingConfirm page(file:src/test/resources/features/Adactin_Login_Page.feature:31)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate the Adactin login Funtionality" name="To validate the Adactin Booking Cofirm page" time="6.53782">
+        <system-out><![CDATA[Given User has to be there in Adactin Booking Cofirm page...................passed
+When User get the booking confirmation order no.............................passed
+Then User is booking the room is done!!!....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
